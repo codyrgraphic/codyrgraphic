@@ -237,36 +237,6 @@ body {
 }
 
 /* Styles for the image carousel container */
-.image-carousel-v {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 2vh;
-  height: 100vh;
-  width: 70vw;
-  gap: 16px;
-  overflow: hidden;
-  transition: all 300ms;
-  z-index: 1;
-}
-.image-carousel-v::-webkit-scrollbar {
-  display: none;
-}
-
-.image-carousel-v-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 50vw;
-  height: 100%;
-  border-radius: 8px;
-  overflow: scroll;
-  gap: 16px;
-  z-index: 1;
-}
-
-.image-carousel-v-2::-webkit-scrollbar {
-  display: none;
-}
 
 .container-image {
   display: flex;
@@ -343,25 +313,6 @@ body {
     flex-grow: 0;
   }
 
-  .image-carousel-v {
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    gap: 1vh;
-    border-radius: 0px;
-    overflow: scroll;
-  }
-
-  .image-carousel-v-2 {
-    flex: none;
-    border-radius: 0px;
-    width: 100%;
-    height: min-content;
-    gap: 1vh;
-    overflow: none;
-  }
-
   .empty-div-1 {
     min-height: 128px;
   }
@@ -372,13 +323,12 @@ body {
 }
 
 @media screen and (max-width: 490px) {
-  
   .container-page {
     position: relative;
     overflow: auto;
     height: fit-content;
-    min-height: 100vh!important;
-    overflow: hidden auto!important;
+    min-height: 100vh !important;
+    overflow: hidden auto !important;
   }
 
   .container-header {
@@ -394,16 +344,6 @@ body {
     width: 70vw;
   }
 
-
-  .image-carousel-v {
-    overflow: visible;
-    height: max-content;
-  }
-
-  .image-carousel-v-2 {
-    overflow: visible;
-  }
-
   .header-bg {
     height: 70px;
   }
@@ -417,6 +357,4 @@ body {
   .empty-div-1 {
     min-height: 78px;
   }
-
-
 }

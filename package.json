@@ -1,0 +1,23 @@
+{
+  "name": "codyrgraphic",
+  "version": "1.0.0",
+  "description": "A design folio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codyrgraphic/codyrgraphic.git"
+  },
+  "author": "Cody Roberts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codyrgraphic/codyrgraphic/issues"
+  },
+  "homepage": "https://github.com/codyrgraphic/codyrgraphic#readme",
+  "dependencies": {
+    "gsap": "^3.11.5",
+    "scrollmagic": "^2.0.8"
+  }
+}

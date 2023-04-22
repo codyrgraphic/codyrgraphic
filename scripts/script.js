@@ -1,3 +1,7 @@
+import gsap from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+
 (() => {
   const menuButton = document.getElementById('menu-button');
   const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -20,23 +24,15 @@
     dropdownWrapper.classList.toggle('open');
   });
 
-  // document.getElementById('messenger-button').addEventListener('click', function() {
-  //   if (isMobileDevice()) {
-  //     isMessengerAppInstalled();
-  //   } else {
-  //     window.open('https://m.me/274598629331502', '_blank');
-  //   }
-  // });
-  
   window.addEventListener("resize", () => {
     redrawElement(headerEffect1);
     redrawElement(headerEffect2);
   });
 
   // Facbook messenger mobile checker
-  function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  };
+  // function isMobileDevice() {
+  //   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  // };
   
   function isMessengerAppInstalled() {
     if (typeof FB !== "undefined" && FB !== null) {
@@ -55,7 +51,5 @@
   function openMessengerInApp() {
     window.location.href = 'fb-messenger://user-thread/274598629331502';
   };
-
-
 
 })()
