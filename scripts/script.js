@@ -1,6 +1,3 @@
-import gsap from 'gsap';
-import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 (() => {
   const menuButton = document.getElementById('menu-button');

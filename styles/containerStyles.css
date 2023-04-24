@@ -1,17 +1,11 @@
 /* Styles for the main container of the page */
-.container-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  overflow: hidden;
-  padding-top: 0px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /* -webkit-overflow-scrolling: touch; */
+body {
+  height: 300vh;
   background-color: #080808;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Styles for the header container */
@@ -91,7 +85,6 @@
   height: 60px;
 }
 
-/* Semi-transparent header behind everything */
 .header-bg {
   display: flex;
   flex: auto;
@@ -230,23 +223,7 @@
 }
 
 html,
-body {
-  height: 100%;
-  overflow: auto;
-  background-color: #080808;
-}
 
-/* Styles for the image carousel container */
-
-.container-image {
-  display: flex;
-  border-radius: 8px;
-  flex: auto;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 300ms;
-}
 
 .empty-div-1 {
   min-height: 67px;
@@ -256,6 +233,29 @@ body {
 .empty-div-2 {
   min-height: 67px;
   width: 100%;
+}
+
+.sequence-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#image-sequence {
+  position: fixed;
+  overflow: hidden;
+  min-width: 100vw;
+  min-height: 100%;
+}
+
+canvas {
+width: fit-content;
+height:min-content
+}
+
+.scrollable-container {
+  height: 110%; /* Adjust this value according to your needs */
 }
 
 @media screen and (max-width: 980px) {

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/codyrgraphic/codyrgraphic#readme",
   "dependencies": {
     "gsap": "^3.11.5",
+    "mogrify": "^0.3.2",
     "scrollmagic": "^2.0.8"
   }
 }
