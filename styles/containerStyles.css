@@ -235,6 +235,32 @@ html,
   width: 100%;
 }
 
+#nav-dots {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 200ms;
+}
+
+.nav-dot:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
 .sequence-container {
   display: flex;
   flex-direction: column;
